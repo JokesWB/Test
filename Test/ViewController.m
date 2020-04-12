@@ -89,6 +89,7 @@ static NSString *cellID = @"cell";
 - (void)addContentAction
 {
     self.isFirst = NO;
+    self.direction = 0;
     self.count++;
     
     dispatch_group_async(group, queue, ^{
